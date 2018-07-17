@@ -5,7 +5,7 @@
 
   _Please do not commit to master branch!_
 
-* Commit and push to  *sko-lv/labs2018-1* 
+* Commit to new branch and push to  *sko-lv/labs2018-1* 
 
 **NOTE:** If you are going to commit several Vagrantfiles - put them into folders separately.
           
