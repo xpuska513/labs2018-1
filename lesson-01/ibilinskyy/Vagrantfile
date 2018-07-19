@@ -1,0 +1,25 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+##### server on ubuntu
+  config.vm.define "Ubuntu" do |ubuntu|
+    ubuntu.vm.box = "ubuntu/xenial64"  
+     ubuntu.vm.provider "virtualbox" do |vb|
+     # Display the VirtualBox GUI when booting the machine
+       vb.gui = false
+     # Customize the amount of memory on the VM:
+       vb.memory = "1024"
+	end
+  end
+###### server on CentOS
+  config.vm.define "Centos" do |cent|
+    cent.vm.box = "centos/7"
+     cent.vm.provider "virtualbox" do |vb|
+     # Display the VirtualBox GUI when booting the machine
+       vb.gui = false
+     # Customize the amount of memory on the VM:
+       vb.memory = "1024"
+	end  
+  end
+end
